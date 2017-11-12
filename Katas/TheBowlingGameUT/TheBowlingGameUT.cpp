@@ -14,11 +14,6 @@ namespace TheBowlingGameUT
 	TEST_CLASS(TestCases)
 	{
 	public:
-        TEST_CLASS_CLEANUP(Cleanup)
-        {
-            DeleteGameInstance();
-        }
-
 		TEST_METHOD(TestGutterGame)
 		{   
             pGame = CreateGameInstance();
@@ -26,6 +21,8 @@ namespace TheBowlingGameUT
             RollMany(20, 0);
 
             Assert::AreEqual(0, pGame->GetScore());
+
+            DeleteGameInstance();
 		}
 
         TEST_METHOD(TestAllOnes)
@@ -35,6 +32,8 @@ namespace TheBowlingGameUT
             RollMany(20, 1);
 
             Assert::AreEqual(20, pGame->GetScore());
+
+            DeleteGameInstance();
         }
 
         TEST_METHOD(TestOneSpare)
@@ -46,6 +45,8 @@ namespace TheBowlingGameUT
             RollMany(17, 0);
 
             Assert::AreEqual(16, pGame->GetScore());
+
+            DeleteGameInstance();
         }
 
         TEST_METHOD(TestOneStrike)
@@ -59,6 +60,8 @@ namespace TheBowlingGameUT
             RollMany(16, 0);
 
             Assert::AreEqual(24, pGame->GetScore());
+
+            DeleteGameInstance();
         }
 
         TEST_METHOD(TestPerfectGame)
@@ -68,6 +71,8 @@ namespace TheBowlingGameUT
             RollMany(12, 10);
 
             Assert::AreEqual(300, pGame->GetScore());
+
+            DeleteGameInstance();
         }
 
     private:
