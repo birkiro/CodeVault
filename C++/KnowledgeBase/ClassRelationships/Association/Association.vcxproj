@@ -21,8 +21,9 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{487BD2E1-4927-4193-B786-74027CFD441E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>AssociationRelationship</RootNamespace>
+    <RootNamespace>Association</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Association</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,7 +148,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AssociationRelationship.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Doctor.cpp" />
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="stdafx.cpp">

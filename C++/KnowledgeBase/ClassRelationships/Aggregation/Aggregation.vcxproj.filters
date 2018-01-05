@@ -24,10 +24,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Doctor.h">
+    <ClInclude Include="Teacher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Patient.h">
+    <ClInclude Include="Department.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,13 +35,13 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AssociationRelationship.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Doctor.cpp">
+    <ClCompile Include="Teacher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Patient.cpp">
+    <ClCompile Include="Department.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
